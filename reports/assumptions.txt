@@ -1,0 +1,4 @@
+1. Each set of data (incoming run, run & metrology) are separated by the num (1-10/51-60)
+2. Missing run_data_5, incoming_run_data5 and metrology_data_5
+   So only working with 19 files per dataset type
+3. X_index and Y_index in metrology data do not change in the future

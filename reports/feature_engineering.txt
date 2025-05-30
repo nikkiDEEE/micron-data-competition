@@ -1,0 +1,16 @@
+Steps for feature engineering
+
+1. Group by Run ID, Process Step & Step ID and aggregate Sensor Value data (for both incoming and run). Also agg Start and End Times by the mean
+2. LEFT JOIN run, incoming ON [Run ID, Process Step & Step ID]
+3. Concat aggregated dataframes
+4. One hot encode Run ID, Process Step and Step ID fields
+5. Calculate Duration as taking End - Start Time
+6. LEFT JOIN the metrology data ON Run ID
+
+Dataset ready.
+
+
+Columns for model input:
+
+1. Aggregated sensor data
+2. Process info
